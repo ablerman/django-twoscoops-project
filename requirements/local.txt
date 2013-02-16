@@ -3,3 +3,10 @@
 coverage==3.6
 django-discover-runner==0.2.2
 django-debug-toolbar==0.9.4
+envoy
+fabric
+git+git://github.com/dcramer/django-devserver#egg=django-devserver
+sqlparse
+werkzeug
+guppy
+line_profiler

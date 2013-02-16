@@ -45,11 +45,25 @@ CACHES = {
 }
 ########## END CACHE CONFIGURATION
 
+########## DEVSERVER CONFIGURATION
+DEVSERVER_MODULES = (
+    # 'devserver.modules.sql.SQLRealTimeModule',
+    'devserver.modules.sql.SQLSummaryModule',
+    # 'devserver.modules.profile.ProfileSummaryModule',
+
+    # Modules not enabled by default
+    # 'devserver.modules.ajax.AjaxDumpModule',
+    # 'devserver.modules.profile.MemoryUseModule',
+    # 'devserver.modules.cache.CacheSummaryModule',
+    # 'devserver.modules.profile.LineProfilerModule',
+)
+########## END DEVSERVER CONFIGURATION
 
 ########## TOOLBAR CONFIGURATION
 # See: https://github.com/django-debug-toolbar/django-debug-toolbar#installation
 INSTALLED_APPS += (
     'debug_toolbar',
+    'devserver',
 )
 
 # See: https://github.com/django-debug-toolbar/django-debug-toolbar#installation
