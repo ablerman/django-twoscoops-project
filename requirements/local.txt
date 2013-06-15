@@ -6,7 +6,7 @@ django-debug-toolbar==0.9.4
 envoy
 fabric
 git+git://github.com/dcramer/django-devserver#egg=django-devserver
-sqlparse
-werkzeug
-guppy
-line_profiler
+sqlparse==0.1.6
+werkzeug==0.9.1
+line_profiler==1.0b3
+guppy==0.1.10

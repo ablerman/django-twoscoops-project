@@ -1,5 +1,5 @@
 bpython==0.12
-django==1.4.3
+django==1.5.1
 django-braces==0.2.1
 django-model-utils==1.1.0
 django-tastypie==0.9.11
