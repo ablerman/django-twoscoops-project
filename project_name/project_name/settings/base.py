@@ -18,6 +18,9 @@ SITE_NAME = basename(DJANGO_ROOT)
 # Add our project to our pythonpath, this way we don't need to type our project
 # name in our dotted import paths:
 path.append(DJANGO_ROOT)
+
+EXTERNAL_ROOT = PROJECT_ROOT + '/external'
+path.append( EXTERNAL_ROOT )
 ########## END PATH CONFIGURATION
 
 
@@ -55,6 +58,7 @@ DATABASES = {
 }
 ########## END DATABASE CONFIGURATION
 
+DEFAULT_APP_TEMPLATE = 'https://github.com/ablerman/app-template/archive/master.zip'
 
 ########## GENERAL CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#time-zone
