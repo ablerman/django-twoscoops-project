@@ -19,3 +19,7 @@ build
 
 # pyCharms project file
 .idea
+
+# OSX Store file
+.DS_Store
+
