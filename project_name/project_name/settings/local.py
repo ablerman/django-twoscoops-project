@@ -64,6 +64,7 @@ DEVSERVER_MODULES = (
 INSTALLED_APPS += (
     'debug_toolbar',
     'devserver',
+    'app_template',
 )
 
 # See: https://github.com/django-debug-toolbar/django-debug-toolbar#installation
