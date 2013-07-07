@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{% block title %}twoscoops{% endblock title %}</title>
+    <title>{% templatetag openblock %} block title {% templatetag closeblock %}twoscoops{% templatetag openblock %} endblocktitle {% templatetag closeblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -32,7 +32,8 @@
 
     <!-- Use this to quickly test CSS changes in a template,
         then move to project.css -->
-    {% block extra_css %}{% endblock extra_css %}
+    {% templatetag openblock %} block extra_css {% templatetag closeblock %}
+    {% templatetag openblock %} endblock extra_css {% templatetag closeblock %}
   </head>
 
   <body>
@@ -58,13 +59,15 @@
     </div>
 
     <div class="container">
+        <h1>
+            {% templatetag openblock %} block page_title {% templatetag closeblock %}
+                Example Base Template
+            {% templatetag openblock %} endblock page_title{% templatetag closeblock %}
+        </h1>
 
-      <h1>{% block page_title %}Example Base Template{% endblock page_title %}</h1>
-
-      {% block content %}
-        <p>Use this document as a way to quick start any new project.</p>
-      {% endblock content %}
-
+        {% templatetag openblock %} block content {% templatetag closeblock %}
+            <p>Use this document as a way to quick start any new project.</p>
+        {% templatetag openblock %} endblock content{% templatetag closeblock %}
     </div> <!-- /container -->
 
     <!-- Le javascript
@@ -76,6 +79,7 @@
     <!-- place project specific Javascript in this file -->
     <script src="{% templatetag openvariable %} STATIC_URL {% templatetag closevariable %}js/project.js"></script>
 
-    {% block extra_js %}{% endblock extra_js %}
+    {% templatetag openblock %} block extra_js {% templatetag closeblock %}
+    {% templatetag openblock %} endblock extra_js {% templatetag closeblock %}    
   </body>
 </html>
