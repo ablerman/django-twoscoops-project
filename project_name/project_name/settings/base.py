@@ -19,7 +19,7 @@ SITE_NAME = basename(DJANGO_ROOT)
 # name in our dotted import paths:
 path.append(DJANGO_ROOT)
 
-PROJECT_ROOT = '/'.join( SITE_ROOT.split('/')[0:-1])
+PROJECT_ROOT = '/'.join(SITE_ROOT.split('/')[0:-1])
 
 EXTERNAL_ROOT = PROJECT_ROOT + '/external'
 path.append( EXTERNAL_ROOT )
